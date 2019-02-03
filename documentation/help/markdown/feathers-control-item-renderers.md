@@ -284,6 +284,7 @@ protected function autoSizeIfNeeded():Boolean
     {
         return false;
     }
+}
 ```
 
 Let's start by checking whether the width and height properties have been set. We have internal variables named [`explicitWidth`](../api-reference/feathers/core/FeathersControl.html#explicitWidth) and [`explicitHeight`](../api-reference/feathers/core/FeathersControl.html#explicitHeight) that will either be a valid number of pixels or they will be `NaN` if they aren't set. If both the width and the height have been set already, we can simply return without any measuring.
